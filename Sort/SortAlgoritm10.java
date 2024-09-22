@@ -25,7 +25,7 @@ public class SortAlgoritm10 {
     }
 
     public static void main(String[] args) {
-        int []angka = {10,5,3,1,1,5,9,8,4,7};
+        int []angka = {7, 8, 3, 4, 1, 8, 5, 6, 7, 2};
         System.out.println("Bubble Sort");
 
         System.out.println("Sebelum di sort");
