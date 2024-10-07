@@ -3,8 +3,9 @@ package Quick;
 import java.util.Arrays;
 
 public class SortAlgoritm {
+    static int count = 0;
     public static void main(String[] args) {
-        int []number = {7, 1, 5, 6, 3, 2,  4};
+        int []number = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         System.out.println();
         System.out.println("== Sebelum Sorting ==");
@@ -25,6 +26,8 @@ public class SortAlgoritm {
         System.out.println(Arrays.toString(number));
 
         System.out.println("WAKTU SORTING: " + waktu + " ms");
+
+        System.out.println("Count: " + count);
 
     }
 
@@ -85,7 +88,7 @@ public class SortAlgoritm {
                 int temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
-
+                count++;
                 System.out.println("Partitioning Process: " + Arrays.toString(array));
             }
         }
@@ -107,6 +110,7 @@ public class SortAlgoritm {
 
             quickSortAlgorithm(array, low, pi - 1);
             quickSortAlgorithm(array, pi + 1, high);
+            
         }
     }
 }
